@@ -1,0 +1,16 @@
+{
+  "name": "claude-code-mods",
+  "description": "Small productivity mods for Claude Code",
+  "owner": {
+    "name": "ya8282",
+    "url": "https://github.com/ya8282"
+  },
+  "plugins": [
+    {
+      "name": "cache-timer",
+      "source": "./plugins/cache-timer",
+      "description": "Colored countdown until the prompt cache expires, above the prompt and in the status line",
+      "version": "0.2.0"
+    }
+  ]
+}
