@@ -1,0 +1,11 @@
+{
+  "name": "copy-commands",
+  "version": "0.2.0",
+  "description": "Holds the shell blocks Claude prints for you to run, and copies them on a keypress or /copy-commands",
+  "license": "MIT",
+  "author": {
+    "name": "ya8282",
+    "url": "https://github.com/ya8282"
+  },
+  "types": "./types/index.d.ts"
+}

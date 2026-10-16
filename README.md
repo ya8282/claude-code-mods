@@ -76,6 +76,27 @@ claude plugin validate plugins/cache-timer
 claude plugin test plugins/cache-timer
 ```
 
+## copy-commands
+
+When Claude ends a turn with commands for you to run (closing beads, git commands it cannot run
+itself), copy-commands holds them so you can paste them into another tmux pane or terminal.
+
+It takes the fenced blocks tagged `sh`, `bash`, `zsh`, `shell` or `console`, or untagged, from the
+main thread's final answer, and keeps them until you copy them or a later answer brings new ones.
+A line above the prompt shows how many command lines are waiting:
+
+- **ctrl+x tab**, then **c** copies them and clears the line; **x** dismisses them.
+- `/copy-commands` copies them too.
+
+Each session holds its own, so several can finish before you paste. The copy goes through Claude
+Code's clipboard path (pbcopy, wl-copy, xclip, tmux's buffer, or OSC 52 over SSH).
+
+```bash
+claude plugin install copy-commands@claude-code-mods
+```
+
+Development: `claude plugin validate plugins/copy-commands` and `claude plugin test plugins/copy-commands`.
+
 ## License
 
 MIT

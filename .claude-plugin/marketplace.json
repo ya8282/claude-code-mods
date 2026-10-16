@@ -11,6 +11,12 @@
       "source": "./plugins/cache-timer",
       "description": "Colored countdown until the prompt cache expires, above the prompt and in the status line",
       "version": "0.2.0"
+    },
+    {
+      "name": "copy-commands",
+      "source": "./plugins/copy-commands",
+      "description": "Holds the shell blocks Claude prints for you to run, and copies them on a keypress or /copy-commands",
+      "version": "0.2.0"
     }
   ]
 }
